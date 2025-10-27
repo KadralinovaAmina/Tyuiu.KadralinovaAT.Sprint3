@@ -6,10 +6,10 @@ namespace Tyuiu.KadralinovaAT.Sprint3.Task1.V22.Lib
     {
         public double GetSumSeries(double value, int startValue, int stopValue)
         {
-            double sumSeries = 1;
+            double sumSeries = 0;
             while (startValue <= stopValue)
             {
-                sumSeries = sumSeries + (Math.Pow(value, startValue) + 1 / 2) * Math.Cos(startValue);
+                sumSeries = sumSeries + (Math.Pow(value, startValue) + 1.0 / 2.0) * Math.Cos(startValue);
                 startValue++;
             }
             return Math.Round(sumSeries, 3);
